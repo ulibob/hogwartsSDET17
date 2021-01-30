@@ -7,7 +7,7 @@ add:
   ids: ["pos_int","pos_bignum","pos_float","zero"]
 
 """
-with open('./datas/calc.yml') as f:
+with open('./datas/calc.yml',encoding="utf-8") as f:
     datas = yaml.safe_load(f)
-    print(datas)
+    print(type(datas))
 

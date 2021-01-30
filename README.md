@@ -18,3 +18,11 @@ Development Test homework
 
 - 将加法
     
+    
+    
+-  区分：setup(), teardown() , setup_class(), teardown_class()
+    函数级别方法：setup(), teardown()
+                每个测试函数都会执行一次前处理和后处理
+    类级别方法：setup_class(),teardown_class() 
+                每个测试类运行之前\后只从一次（不关心类里有多少个测试用例）
+                

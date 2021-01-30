@@ -8,7 +8,10 @@ add:
     - [-1, 1, 0]
     - [-50000, -40000, -90000]
     - [-0.002, -0.003, -0.005]
-  ids: ["pos_int", "bignum", "zero", "pos_float", "ngt_int",  "pos_ngt_int", "ngt_big_num", "ngt_float"]
+    - [a, b, "请输入数字"]
+    - ["@！￥%", "#", "请输入数字"]
+    - [dfadas,fda, "请输入数字"]
+  ids: ["pos_int", "bignum", "zero", "pos_float", "ngt_int",  "pos_ngt_int", "ngt_big_num", "ngt_float", "str1", "other", "str2"]
 subtr:
   datas:
     - [2, 1, 1]
@@ -19,7 +22,10 @@ subtr:
     - [1, -1, 2]
     - [-50000, -20000, -30000]
     - [-0.002, -0.001, -0.001]
-  ids: ["pos_int", "bignum", "zero", "pos_float", "ngt_int",  "pos_ngt_int", "ngt_big_num", "ngt_float"]
+    - [a, b, "请输入数字"]
+    - ["@@#￥%", "#", "请输入数字"]
+    - [dfadas,fda, "请输入数字"]
+  ids: ["pos_int", "bignum", "zero", "pos_float", "ngt_int",  "pos_ngt_int", "ngt_big_num", "ngt_float", "str1", "other", "str2"]
 multi:
   datas:
     - [2, 3, 6]
@@ -30,7 +36,10 @@ multi:
     - [-3, 2, -6]
     - [-3000, 5000, 15000000]
     - [-0.02, -0.04, 0.0008]
-  ids: ["pos_int", "bignum", "zero", "pos_float", "ngt_int",  "pos_ngt_int", "ngt_big_num", "ngt_float"]
+    - [a, b, "请输入数字"]
+    - ["@#￥%", "#", "请输入数字"]
+    - [dfadas,fda, "请输入数字"]
+  ids: ["pos_int", "bignum", "zero", "pos_float", "ngt_int",  "pos_ngt_int", "ngt_big_num", "ngt_float", "str1", "other", "str2"]
 divid:
   datas:
     - [4, 2, 2]
@@ -43,4 +52,7 @@ divid:
     - [-8, -2, 4]
     - [-80000, -40000, 2]
     - [-0.008, -0.002, 4]
-  ids: ["pos_int", "bignum", "zero", "zero1", "pos_float", "pos_float1", "ngt_int",  "pos_ngt_int", "ngt_big_num", "ngt_float"]
+    - [a, b, "请输入数字"]
+    - ["@#$^*", "#", "请输入数字"]
+    - [dfadas,fda, "请输入数字"]
+  ids: ["pos_int", "bignum", "zero", "zero1", "pos_float", "pos_float1", "ngt_int",  "pos_ngt_int", "ngt_big_num", "ngt_float", "str1", "other", "str2"]

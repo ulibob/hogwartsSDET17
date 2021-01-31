@@ -46,12 +46,12 @@ class TestCalc:
 
     # 乘法测试用例
     @pytest.mark.parametrize("a, b, result", multi_data[0], ids=multi_data[1])
-    def test_subtr(self, a, b, result):
+    def test_multi(self, a, b, result):
         # print(a, b, result)
         assert result == self.calc.multi(a, b)
 
     # 除法测试用例
     @pytest.mark.parametrize("a, b, result", divid_data[0], ids=divid_data[1])
-    def test_subtr(self, a, b, result):
+    def test_divid(self, a, b, result):
         # print(a, b, result)
         assert result == self.calc.divid(a, b)

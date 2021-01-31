@@ -19,9 +19,9 @@ class MyCalculator:
             return "请输入数字"
     def multi(self, a, b):
         if isinstance((a), (float, int)) and isinstance((b), (float, int)):
-
             return a * b
-
+        else:
+            return "请输入数字"
     def divid(self, a, b):
         if isinstance((a), (float, int)) and isinstance((b), (float, int)):
             try:

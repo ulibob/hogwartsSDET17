@@ -55,3 +55,31 @@ Development Test homework
     类级别方法：setup_class(),teardown_class() 
                 每个测试类运行之前\后只从一次（不关心类里有多少个测试用例）
                 
+                
+                
+#### pytest常用的插件
+- pip install pytest-ordering      控制用例的执行顺序
+- pip install pytest-dependency    控制用例的依赖关系 (可添加复杂的依赖关系)
+- pip install pytest-xdist         分布式并发执行测试用例
+- pip install pytest-rerunfailures 失败重跑  【用法】：`pytest test_rerun --reruns 5` `pytest test_run --reruns 5 --reruns-delay 1`
+- pip install pytest-assume        多重校验
+- pip install pytest-random-order  用例随机执行
+- pip install pytest-html          测试报告
+
+
+#### 测试用例的一些基本原则：
+* 不要让case有顺序
+* 不要让测试用例有依赖
+* 如果你无法做到，可以临时性的用插件解决
+
+### 插件的开发
+* 内置plugin:
+    *从代码内部的_pytest目录加载
+    
+* 外部插件（第三方插件）：
+    * 通过 setuptools entry points 机制发现的第三方插件（https://docs.pytest.org/en/latest/plugins.html）
+    
+* conftest.py存放的本地插件：【重点关注】
+    * 自动模块发现机制
+    
+* pytest --trace-config查看当前pytest中所有的plugin(带有hook方法的文件)

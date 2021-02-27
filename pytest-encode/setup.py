@@ -8,8 +8,8 @@ setup(
     name='pytest_encode',
     url='https://github.com/xxx/pytest-encode',
     version='1.0',
-    author="xixi",
-    author_email='418974188@qq.com',
+    author="uli",
+    author_email='ulibo_1@outlook.com',
     description='set your encoding and logger',
     long_description='Show Chinese for your mark.parametrize(). Define logger variable for getting your log',
     classifiers=[  # 分类索引 ，pip 对所属包的分类

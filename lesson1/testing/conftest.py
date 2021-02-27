@@ -1,12 +1,12 @@
 # conftest是固定的,不能改
 import datetime
-import os
-import sys
+# import os
+# import sys
 from typing import List
 
 import pytest
 
-sys.path.append(os.path.abspath(os.path.join(os.getcwd(), "..")))
+# sys.path.append(os.path.abspath(os.path.join(os.getcwd(), "..")))
 
 
 

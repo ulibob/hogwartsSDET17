@@ -1,6 +1,4 @@
-from selenium import webdriver
-
-from lesson1.tmp.main import Main
+from .main import Main
 
 
 class TestWait:

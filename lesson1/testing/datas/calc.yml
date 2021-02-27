@@ -11,7 +11,7 @@ add:
     - [a, b, "请输入数字"]
     - ["@！￥%", "#", "请输入数字"]
     - [dfadas,fda, "请输入数字"]
-  ids: ["pos_int", "bignum", "zero", "pos_float", "ngt_int",  "pos_ngt_int", "ngt_big_num", "ngt_float", "str1", "other", "str2"]
+  ids: ["pos_int 整数", "bignum", "zero", "pos_float", "ngt_int",  "pos_ngt_int", "ngt_big_num", "ngt_float", "str1", "other", "str2"]
 subtr:
   datas:
     - [2, 1, 1]

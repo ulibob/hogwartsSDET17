@@ -78,8 +78,59 @@ Development Test homework
     
 * 外部插件（第三方插件）：
     * 通过 setuptools entry points 机制发现的第三方插件（https://docs.pytest.org/en/latest/plugins.html）
+    * pip install 安装的插件
     
-* conftest.py存放的本地插件：【重点关注】
+* conftest.py存放的本地插件：** 重点 **
     * 自动模块发现机制
     
 * pytest --trace-config查看当前pytest中所有的plugin(带有hook方法的文件)
+
+
+#### pytest hook函数
+hook 钩子 函数定制和扩展插件
+conftest.py：本地的插件库，存放fixture函数或者hook函数作用于该文件所在的目录及其所有的子目录
+
+#### 打包
+如何打包：
+https://packaging.python.org/tutorials/packaging-projects/
+
+需安装的工具：
+setuptools , wheel
+
+`python setup.py sdist bdist_wheel`
+
+
+
+#### allure （windows）
+- 下载Allure的zip安装包
+- 解压到allure-commandline目录
+- 进入bin目录，运行allure.bat
+- 添加allure到环境变量PATH（\安装路径\allure-commandline\bin）
+
+* 安装pip install pytest-allure
+Allure2 解析过程：
+1. 安装 allure2
+    - 下载Allure的zip安装包
+    - 解压到allure-commandline目录
+    - 进入bin目录，运行allure.bat
+    - 添加allure到环境变量PATH（\安装路径\allure-commandline\bin）
+2. Allure help  帮助文档 
+3. 生成 allure 测试结果 ：pytest —alluredir=./report/
+4. 展示报告：allure serve ./report
+5. 生成最终版本的报告：   allure generate ./report
+在本地搭建一个网站服务（例如：Django，flask）
+python manage.py runserver  (http://127.0.0.1:8000/)
+
+
+
+#### allure用法
+```
+    @allure.feature("name")
+    @allure.story("name)
+```
+- 为测试用例加标题
+```python
+    @allure.title()
+    
+```
+- 生成测试报告

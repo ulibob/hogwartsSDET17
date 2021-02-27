@@ -1,5 +1,7 @@
-import pytest
 import time
+
+import pytest
+
 
 @pytest.mark.dependency()
 @pytest.mark.xfail(reason="deliberate fail")

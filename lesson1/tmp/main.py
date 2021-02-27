@@ -1,4 +1,4 @@
-from lesson1.tmp.hogwarts import Hogwarts
+from ...lesson1.tmp.hogwarts import Hogwarts
 
 
 class Main:

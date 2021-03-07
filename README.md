@@ -134,3 +134,47 @@ python manage.py runserver  (http://127.0.0.1:8000/)
     
 ```
 - 生成测试报告
+
+
+-------------------------------------------
+
+## Web企业微信实战：
+- 实现通讯录添加成员
+- 三种等待机制强化理解
+- 了解Page Object 模式
+- 利用PO封装企业微信通讯录
+
+### 
+
+## 浏览器复用
+
+- 命令：
+`chrome remote-debugging=9222`
+- 测试用例中代码：
+```python
+from selenium import webdriver
+
+class TestTmp():
+    def setup_method(self, method):
+        # 声明Chrome参数
+        chrome_arg = webdriver.ChromeOptions()
+        # 地址
+        chrome_arg.debugger_address = "127.0.0.1:9222"
+
+        self.driver = webdriver.Chrome(options=chrome_arg)
+        self.driver.get("http://www.baidu.com")
+
+```
+
+####        元素不可交互报错的情况:
+        E       selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+        E         (Session info: chrome=88.0.4324.190)
+   
+            1. 元素被遮挡：元素前面还有其它不可见元素
+            2. 元素有多个，需要人工挑选合适的元素  
+            
+### 三种等待方式：
+* 背景： 元素加载需要时间，需等待元素加载完毕
+- 直接等待（强制等待）：sleep(num)
+- 隐式等待：driver.implicitly_wait()
+- 显式等待：WebDriverWait()

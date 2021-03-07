@@ -16,5 +16,5 @@ class TestTmp():
         self.driver.get("http://www.baidu.com")
         cookies = self.driver.get_cookies()
         for i in cookies:
-            pass
+            print(i)
 # todo: 需完善

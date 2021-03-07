@@ -1,9 +1,6 @@
 from test_selenium.address_page.main_page import MainPage
 
 
-# from test_selenium.address_page.address_page import AddressPage
-# from test_seleniuma
-
 class TestAddcontact:
 
     def test_add_contact(self):

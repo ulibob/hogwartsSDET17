@@ -21,7 +21,7 @@ self.driver = webdriver.Chrome()
 *3 浏览器不要设置缩放
 
 ### 浏览器调试
-`chrome --remote-debugging-port=9222`
+`chrome -remote-debugging-port=9222`
 
 
 - 命令：

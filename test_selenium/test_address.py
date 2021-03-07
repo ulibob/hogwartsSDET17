@@ -30,19 +30,19 @@ class TestTmp():
             # 点击添加成员
             self.driver.find_elements(By.XPATH, "//*[@class='qui_btn ww_btn js_add_member']")[1].click()
 
-            eles = driver.find_elements(By.XPATH, "//*[@id='username']")
+            eles = self.driver.find_elements(By.XPATH, "//*[@id='username']")
             return len(eles) > 0
 
         WebDriverWait(self.driver, 10).until(wait_name)
 
         # 输入姓名
-        self.driver.find_element(By.XPATH, "//*[@id='username']").send_keys("我叫小明")
+        self.driver.find_element(By.XPATH, "//*[@id='username']").send_keys("test01")
 
         # 输入账号
-        self.driver.find_element(By.XPATH, "//*[@id='memberAdd_acctid']").send_keys("xm123456")
+        self.driver.find_element(By.XPATH, "//*[@id='memberAdd_acctid']").send_keys("test001")
 
         # 输入手机号
-        self.driver.find_element(By.XPATH, "//*[@id='memberAdd_phone']").send_keys("15501863936")
+        self.driver.find_element(By.XPATH, "//*[@id='memberAdd_phone']").send_keys("15501860001")
 
 
         # 点击保存
